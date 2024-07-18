@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shantams.roulette.MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="SPIN"
+        android:layout_marginBottom="38dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        />
+
+    <ImageView
+        android:id="@+id/ic_wheel"
+        android:scaleType="centerInside"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/spin"
+        />
+
+    <ImageView
+        android:id="@+id/pointer"
+        android:scaleType="centerInside"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@id/ic_wheel"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/triangle_pointer"
+        />
+
+</RelativeLayout>
